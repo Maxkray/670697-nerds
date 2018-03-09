@@ -24,16 +24,43 @@
 			<h1>Магазин готовых шаблонов</h1>
 		</div>
 		<section class="filters">
-			<div class="filter-value">
-				<h3>Стоимость</h3>
-			</div>
-			<div class="filter-grid">
-				<h3>Сетка</h3>
-			</div>
-			<div class="filter-special">
-				<h3>Особенности</h3>
-			</div>
-			<button class="button-2 btn-text" aria-label="Показать">Показать</button>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="filter-value">
+			  <label>
+          <h3>Стоимость</h3>
+          <input type="range" name="price-range" class="price-range" min="0" max="15000" step="50">
+			  </label>
+      </div>
+			<fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+          <ul>
+            <li><label><input type="radio" name="grid-radio">Адаптивная</label></li>
+            <li><label><input type="radio" name="grid-radio">Фиксированная</label></li>
+            <li><label><input type="radio" name="grid-radio">Резиновая</label></li>
+          </ul>
+			</fieldset>
+			<fieldset class="filter-special">
+				<legend>Особенности:</legend>
+          <ul>
+            <li><label><input type="checkbox" name="special-slider" class="visually-hidden">Слайдер
+              <span class="checkbox-indicator"></span>
+            </label></li>
+            <li><label><input type="checkbox" name="special-block" class="visually-hidden">Блок приемуществ
+              <span class="checkbox-indicator"></span>
+            </label></li>
+            <li><label><input type="checkbox" name="special-news" class="visually-hidden">Новости
+              <span class="checkbox-indicator"></span>
+            </label></li>
+            <li><label><input type="checkbox" name="special-hall" class="visually-hidden">Галерея
+              <span class="checkbox-indicator"></span>
+            </label></li>
+            <li><label><input type="checkbox" name="special-busket" class="visually-hidden">Корзина
+              <span class="checkbox-indicator"></span>
+            </label></li>
+          </ul>
+			</fieldset>
+			</form>
+      <button class="button-2 btn-text" aria-label="Показать">Показать</button>
 		</section>
 		<section class="sort">
 			<h2 class="visually-hidden">Типы</h2>
