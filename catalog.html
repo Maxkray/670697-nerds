@@ -24,7 +24,7 @@
 			<h1>Магазин готовых шаблонов</h1>
 		</div>
 		<section class="filters">
-			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="filter-value">
           <h3>Стоимость:</h3>
           <p class="filter-slider"></p>
@@ -34,7 +34,7 @@
 			<fieldset class="filter-grid">
           <legend>Сетка:</legend>
           <ul>
-            <li><label><input type="radio" name="grid-radio">Адаптивная</label></li>
+            <li><label><input type="radio" name="grid-radio" checked>Адаптивная</label></li>
             <li><label><input type="radio" name="grid-radio">Фиксированная</label></li>
             <li><label><input type="radio" name="grid-radio">Резиновая</label></li>
           </ul>
@@ -42,19 +42,19 @@
 			<fieldset class="filter-special">
 				<legend>Особенности:</legend>
           <ul>
-            <li><label><input type="checkbox" name="special-slider" class="visually-hidden">Слайдер
+            <li><label><input type="checkbox" name="special-slider" checked>Слайдер
               <span class="checkbox-indicator"></span>
             </label></li>
-            <li><label><input type="checkbox" name="special-block" class="visually-hidden">Блок приемуществ
+            <li><label><input type="checkbox" name="special-block">Блок приемуществ
               <span class="checkbox-indicator"></span>
             </label></li>
-            <li><label><input type="checkbox" name="special-news" class="visually-hidden">Новости
+            <li><label><input type="checkbox" name="special-news" checked>Новости
               <span class="checkbox-indicator"></span>
             </label></li>
-            <li><label><input type="checkbox" name="special-hall" class="visually-hidden">Галерея
+            <li><label><input type="checkbox" name="special-hall">Галерея
               <span class="checkbox-indicator"></span>
             </label></li>
-            <li><label><input type="checkbox" name="special-busket" class="visually-hidden">Корзина
+            <li><label><input type="checkbox" name="special-busket">Корзина
               <span class="checkbox-indicator"></span>
             </label></li>
           </ul>
@@ -81,7 +81,7 @@
 					<div class="layout-menu">
 						<h3>Sedona</h3>
 						<p>Информационный сайт<br> для туристов</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button" aria-label="Купить">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
@@ -137,13 +137,14 @@
 		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="copyright">
+		<section class="our-contacts">
 			<h2 class="visually-hidden">Адрес</h2>
 			<b>Nërds design studio</b>
 			<p>191186,Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
 			<p>тел. +7(812)275-75-75</p>
 			<button class="button" aria-label="Напишите нам">Напишите нам</button>
-		</section>
+		  <img src="img/index/map.jpg" width="1440" height="416" alt="ул. Б. Конюшенная, д. 19/8">
+    </section>
 		<section class="social">
 			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul class="icon-list">
