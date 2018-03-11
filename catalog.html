@@ -28,35 +28,48 @@
       <div class="filter-value">
           <h3>Стоимость:</h3>
           <p class="filter-slider"></p>
-          <label>От<input type="number" name="min"></label>
-          <label>До<input type="number" name="max"></label>
+          <label for="min">От</label>
+          <input type="number" name="min" id="min">
+          <label id="max">До</label>
+          <input type="number" name="max" id="max">
       </div>
 			<fieldset class="filter-grid">
           <legend>Сетка:</legend>
           <ul>
-            <li><label><input type="radio" name="grid-radio" checked>Адаптивная</label></li>
-            <li><label><input type="radio" name="grid-radio">Фиксированная</label></li>
-            <li><label><input type="radio" name="grid-radio">Резиновая</label></li>
+            <li><input type="radio" name="grid-radio" id="grid-1" checked>
+                <label for="grid-1">Адаптивная</label>
+            </li>
+            <li><input type="radio" name="grid-radio" id="grid-2">
+                 <label for="grid-2">Фиксированная</label>
+            </li>
+            <li><input type="radio" name="grid-radio" id="grid-3">
+               <label for="grid-3">Резиновая</label>
+            </li>
           </ul>
 			</fieldset>
 			<fieldset class="filter-special">
 				<legend>Особенности:</legend>
           <ul>
-            <li><label><input type="checkbox" name="special-slider" checked>Слайдер
+            <li><input type="checkbox" name="special-slider" id="special-1" checked>
+              <label for="special-1">Слайдер</label>
               <span class="checkbox-indicator"></span>
-            </label></li>
-            <li><label><input type="checkbox" name="special-block">Блок приемуществ
+           </li>
+            <li><input type="checkbox" name="special-block" id="special-2">
+              <<label for="special-2">Блок приемуществ</label>
               <span class="checkbox-indicator"></span>
-            </label></li>
-            <li><label><input type="checkbox" name="special-news" checked>Новости
+            </li>
+            <li><input type="checkbox" name="special-news" id="special-3" checked>
+              <label for="special-3">Новости</label>
               <span class="checkbox-indicator"></span>
-            </label></li>
-            <li><label><input type="checkbox" name="special-hall">Галерея
+            </li>
+            <li><input type="checkbox" name="special-hall" id="special-4">
+              <label for="special-4">Галерея</label>
               <span class="checkbox-indicator"></span>
-            </label></li>
-            <li><label><input type="checkbox" name="special-busket">Корзина
+            </li>
+            <li><input type="checkbox" name="special-busket" id="special-5">
+              <label for="special-5">Корзина</label>
               <span class="checkbox-indicator"></span>
-            </label></li>
+            </li>
           </ul>
 			</fieldset>
 			</form>
@@ -161,22 +174,16 @@
 			<h2>Напишите нам</h2>
 		  <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label>
-              Ваше имя:
-              <input type="text" name="name" placeholder="Имя Фамилия" class="write-name">
-            </label>
+            <label for="write-name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
           </p>
           <p>
-            <label>
-              Ваш e-mail:
-              <input type="text" name="mail" placeholder="email@example.com" class="write-mail">
-            </label>
+            <label for="write-mail">Ваш e-mail:</label>
+              <input type="text" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
           </p>
           <p>
-          <label>
-            Текст письма:
-            <textarea name="text-us" placeholder="В свободной форме" class="write-text-us"></textarea>
-          </label>
+          <label for="write-text-us">Текст письма:</label>
+            <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us"></textarea>
         </p>
         <button class="button" type="submit" aria-label="Отправить">Отправить</button>
       </form>
