@@ -7,34 +7,74 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="#" class="main-header-logo" title="Переход на главную страницу">
+			<a href="#" class="main-header-logo" title="Переход на главную страницу" aria-label="Логотип">
 				<img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-			</a>	
+			</a>
 			<ul class="site-navigation">
 					<li><a href="studio.html" title="О студии Nërds">Студия</a></li>
 					<li><a href="clients.html" title="О клиентах">Клиенты</a></li>
 					<li><a href="shop.html" title="О магазине">Магазин</a></li>
 					<li><a href="contacts.html" title="Наши контакты">Контакты</a></li>
 			</ul>
-			<a href="#" class="busket" title="Корзина с покупками">Корзина</a>
-		</nav>	
+			<a href="#" class="busket" title="Корзина с покупками" >Корзина</a>
+		</nav>
 	</header>
 	<main>
 		<div class="main-title">
-			<h1>Магазин готовых шаблонов</h1>		
+			<h1>Магазин готовых шаблонов</h1>
 		</div>
 		<section class="filters">
-			<div class="filter-value">
-				<h3>Стоимость</h3>
-			</div>
-			<div class="filter-grid">
-				<h3>Сетка</h3>
-			</div>
-			<div class="filter-special">
-				<h3>Особенности</h3>
-			</div>
-			<button class="button-2 btn-text">Показать</button>	
-		</section>	
+			<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="filter-value">
+          <h3>Стоимость:</h3>
+          <p class="filter-slider"></p>
+          <label for="min">От</label>
+          <input type="number" name="min" id="min">
+          <label id="max">До</label>
+          <input type="number" name="max" id="max">
+      </div>
+			<fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+          <ul>
+            <li><input type="radio" name="grid-radio" id="grid-1" value="adaptive" checked>
+                <label for="grid-1">Адаптивная</label>
+            </li>
+            <li><input type="radio" name="grid-radio" id="grid-2" value="fixed">
+                 <label for="grid-2">Фиксированная</label>
+            </li>
+            <li><input type="radio" name="grid-radio" id="grid-3" value="rubber">
+               <label for="grid-3">Резиновая</label>
+            </li>
+          </ul>
+			</fieldset>
+			<fieldset class="filter-special">
+				<legend>Особенности:</legend>
+          <ul>
+            <li><input type="checkbox" name="special-slider" id="special-1" checked value="slider">
+              <label for="special-1">Слайдер</label>
+              <span class="checkbox-indicator"></span>
+           </li>
+            <li><input type="checkbox" name="special-block" id="special-2" value="features">
+              <<label for="special-2">Блок приемуществ</label>
+              <span class="checkbox-indicator"></span>
+            </li>
+            <li><input type="checkbox" name="special-news" id="special-3" value="news" checked>
+              <label for="special-3">Новости</label>
+              <span class="checkbox-indicator"></span>
+            </li>
+            <li><input type="checkbox" name="special-hall" id="special-4" value="passage">
+              <label for="special-4">Галерея</label>
+              <span class="checkbox-indicator"></span>
+            </li>
+            <li><input type="checkbox" name="special-busket" id="special-5" value="busket">
+              <label for="special-5">Корзина</label>
+              <span class="checkbox-indicator"></span>
+            </li>
+          </ul>
+			</fieldset>
+			</form>
+      <button class="button-2 btn-text">Показать</button>
+		</section>
 		<section class="sort">
 			<h2 class="visually-hidden">Типы</h2>
 			<h3>Сортировать</h3>
@@ -42,9 +82,9 @@
 				<li><button class="by-price">По цене</button></li>
 				<li><button  class="by-type">По типу</button></li>
 				<li><button  class="by-name">По названию</button></li>
-				<li><button  class="by-down"></button></li>
-				<li><button  class="by-up"></button></li>	
-			</ul>	
+				<li><button  class="by-down" aria-label="По уменьшению"></button></li>
+				<li><button  class="by-up" aria-label="По возрастанию"></button></li>
+			</ul>
 		</section>
 		<section class="price-list-layouts">
 			<h2 class="visually-hidden">Макеты</h2>
@@ -57,7 +97,7 @@
 						<button class="button">9 900 руб.</button>
 					</div>
 				</li>
-				<li>			
+				<li>
 					<img src="img/catalog/img-pink.jpeg" width="360" height="575" alt="Pink app" >
 					<div class="layout-menu">
 						<h3>Pink app</h3>
@@ -65,14 +105,14 @@
 						<button class="button">9 900 руб.</button>
 					</div>
 				</li>
-				<li>	
+				<li>
 					<img src="img/catalog/img-barbershop.jpeg" width="360" height="575" alt="Barbershop" >
 					<div class="layout-menu">
 						<h3>Barbershop</h3>
 						<p>Сайт салона красоты.<br> Для мужчин, да.</p>
 						<button class="button">9 900 руб.</button>
 					</div>
-				</li>	
+				</li>
 				<li>
 					<img src="img/catalog/img-mishka.jpeg" width="360" height="575" alt="mishka" >
 					<div class="layout-menu">
@@ -81,7 +121,7 @@
 						<button class="button">9 900 руб.</button>
 					</div>
 				</li>
-				<li>	
+				<li>
 					<img src="img/catalog/img-aplus.jpeg" width="360" height="575" alt="Aplus" >
 					<div class="layout-menu">
 						<h3>A Plus</h3>
@@ -97,7 +137,7 @@
 						<button class="button">9 900 руб.</button>
 					</div>
 				</li>
-			</ul>												
+			</ul>
 		</section>
 		<section class="content-navigation">
 			<h2 class="visually-hidden">Страницы</h2>
@@ -106,33 +146,49 @@
 				<button class="button-2">2</button>
 				<button class="button-2">3</button>
 				<button class="button-2 btn-text">Следующая</button>
-			</nav>	
-		</section>	
+			</nav>
+		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="copyright">
-			<h2 class="visually-hidden">Адрес</h2>	
+		<section class="our-contacts">
+			<h2 class="visually-hidden">Адрес</h2>
 			<b>Nërds design studio</b>
 			<p>191186,Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
 			<p>тел. +7(812)275-75-75</p>
-			<button class="button">Напишите нам</button>		
-		</section>
+			<button class="button" aria-label="Напишите нам">Напишите нам</button>
+		  <img src="img/index/map.jpg" width="1440" height="416" alt="ул. Б. Конюшенная, д. 19/8">
+    </section>
 		<section class="social">
 			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul class="icon-list">
-				<li><a href="#" class="social-vk" title="VK"><img src="img/index/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
-				<li><a href="#" class="social-fb" title="FB"><img src="img/index/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
-				<li><a href="#" class="social-insta" title="insta"><img src="img/index/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
+				<li><a href="#" class="social-vk" title="VK" aria-label="Вконтакте"><img src="img/index/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
+				<li><a href="#" class="social-fb" title="FB" aria-label="Фейсбук"><img src="img/index/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
+				<li><a href="#" class="social-insta" title="insta" aria-label="Инстаграм"><img src="img/index/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
 			</ul>
-			<div class="offer">	
+			<div class="offer">
 				<b>Давайте дружить,это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</section>
 		<section class="modal modal-write">
 			<h2>Напишите нам</h2>
-			<span class="modal-close">x</span>	
+		  <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="write-name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
+          </p>
+          <p>
+            <label for="write-mail">Ваш e-mail:</label>
+              <input type="text" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
+          </p>
+          <p>
+          <label for="write-text-us">Текст письма:</label>
+            <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
 		</section>
-	</footer>	
+	</footer>
 </body>
 </html>
