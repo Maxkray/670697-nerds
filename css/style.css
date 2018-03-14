@@ -45,14 +45,17 @@ a{
 }
 
 .slider-first{
-  background-image: url("img/index/nerds-index-slide1.png");
+  background-image: url("../img/index/nerds-index-slide1.png");
+  background-repeat: no-repeat;
 }
 
 .slider-second{
-  background-image: url("img/index/nerds-index-slide2.png");
+  background-image: url("../img/index/nerds-index-slide2.png");
+  background-repeat: no-repeat;
 }
 .slider-third{
-  background-image: url("img/index/nerds-index-slide3.png");
+  background-image: url("../img/index/nerds-index-slide3.png");
+  background-repeat: no-repeat;
 }
 
 .slider-head{
@@ -79,15 +82,18 @@ a{
 }
 
 .service-red{
-  background-image: url("img/index/illustration-1.jpg");
+  background-image: url("../img/index/illustration-1.jpg");
+  background-repeat: no-repeat;
 }
 
 .service-green{
-  background-image: url("img/index/illustration-2.jpg");
+  background-image: url("../img/index/illustration-2.jpg");
+  background-repeat: no-repeat;
 }
 
 .service-yellow{
-  background-image: url("img/index/illustration-3.jpg");
+  background-image: url("../img/index/illustration-3.jpg");
+  background-repeat: no-repeat;
 }
 
 .service-head{
@@ -171,7 +177,8 @@ a{
   opacity: 0.1;
 }
 .our-contacts{
-  background-image: url("img/index/map-marker.png");
+  background-image: url("../img/index/map-marker.png");
+  background-repeat: no-repeat;
 }
 
 .our-contacts b{
