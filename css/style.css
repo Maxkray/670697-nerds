@@ -8,6 +8,10 @@ body {
 
 }
 
+.visually-hidden{
+  display: none;
+}
+
 a{
   text-decoration: none;
 }
@@ -16,24 +20,24 @@ a{
   text-transform: uppercase;
   line-height: 30px;
 
-  background-color: rgb(238, 238, 238);
+  background-color: #eeeeee;
 }
 
 .main-navigation a{
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .main-navigation a:hover{
-  color: rgb(251, 86, 90);
+  color: #fb565a;
 }
 
 .main-navigation a:focus{
   text-decoration: underline;
-  text-decoration-color: rgb(251, 86, 90);
+  text-decoration-color: #fb565a;
 }
 
 .main-navigation a:active{
-  color: rgb(166, 166, 166);
+  color: #a6a6a6;
 }
 
 .site-navigation{
@@ -41,7 +45,7 @@ a{
 }
 
 .slider{
-  background-color: rgb(238, 238, 238);
+  background-color: #eeeeee;
 }
 
 .slider-first{
@@ -63,22 +67,27 @@ a{
   line-height: 55px;
 }
 
+.slide-description{
+  color: #283136;
+}
+
 .slider-button{
   line-height: 18px;
   text-transform: uppercase;
 
-  color: rgb(255, 255, 255);
-  background-color: rgb(251, 86, 90);
+  color: #ffffff;
+  background-color: #fb565a;
 }
 
 .slider-button:hover,
 .slider-button:focus{
-  background-color: rgb(231, 66, 70);
+  background-color: #e74246;
 }
 
 .slider-button:active{
-  background-color: rgb(215, 55, 59);
-  color: rgba(227, 115, 118, 0.3);
+  background-color: #d7373b;
+  color: #e37376;
+  opacity: 0.3;
 }
 
 .service-red{
@@ -101,50 +110,62 @@ a{
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.service-description{
+  color: #283136;
+}
+
+.service a{
+  line-height: 18px;
+}
+
 .service-btn{
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 .red-btn{
-  background-color: rgb(251, 86, 90);
+  background-color: #fb565a;
 }
 
 .red-btn:hover,
 .red-btn:focus{
-  background-color: rgb(231, 66, 70);
+  background-color: #e74246;
 }
 
 .red-btn:active{
-  background-color: rgb(215, 55, 59);
-  color: rgba(227, 115 ,118, 0.3);
+  background-color: #d7373b;
+  color: #e37376;
+  opacity: 0.3;
 }
 
 .green-btn{
-  background-color: rgb(0, 202, 116);
+  background-color: #00ca74;
 }
 
 .green-btn:hover,
 .green-btn:focus{
-  background-color: rgb(0, 188, 108);
+  background-color: #00bc6c;
 }
 
 .green-btn:active{
-  background-color: rgb(0, 153, 102);
-  color: rgba(77, 196, 145, 0.3);
+  background-color: #009966;
+  color: #4dc491;
+  opacity: 0.3;
 }
 
 .yellow-btn{
-  background-color: rgb(239, 200, 74);
+  background-color: #efc84a;
 }
 
 .yellow-btn:hover,
 .yellow-btn:focus{
-  background-color: rgb(234, 181, 52);
+  background-color: #eab534;
 }
 
 .yellow-btn:active{
-  background-color: rgb(229, 167, 34);
-  color: rgba(237, 194, 101, 0.3);
+  background-color: #e5a722;
+  color: #edc265;
+  opacity: 0.3;
 }
 
 .slogan{
@@ -156,8 +177,27 @@ a{
   text-transform: uppercase;
 }
 
+.text p{
+  color: #283136;
+}
+
+.dev-orders li{
+  color: #283136;
+}
+
 .statistics b{
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+th{
+  font-size: 45px;
+  line-height: 10px;
+}
+
+td{
+  color: #283136;
+  line-height: 18px;
 }
 
 .clients-list{
@@ -183,19 +223,26 @@ a{
 
 .our-contacts b{
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
 }
 
-.out-contacts p{
+.contacts-p{
   line-height: 18px;
-  color: rgb(102, 102, 102);
+  color: #666666;
 }
+
+.phone a{
+  color: #666666;
+}
+
 button.button{
   line-height: 18px;
   text-transform: uppercase;
   border: none;
 
-  color: rgb(255, 255, 255);
-  background-color: rgb(251, 86, 90);
+  color: #ffffff;
+  background-color: #fb565a;
 }
 
 .icon-list{
@@ -203,30 +250,32 @@ button.button{
 }
 
 .icon-list a{
-background-color: rgb(225, 225, 225);
+background-color: #e1e1e1;
 }
 
 .icon-list a:hover,
 .icon-list a:focus{
-  background-color: rgb(231, 66, 70);
+  background-color: #e74246;
 }
 
 .icon-list a:active{
-  background-color: rgb(215, 55, 59);
+  background-color: #d7373b;
 }
 
 .icon-list img:active{
-  background-color: rgb(227, 115, 118);
+  background-color:  #e37376;
   opacity: 0.3;
 }
 
 .offer b{
   font-size: 36px;
   line-height: 36px;
+  font-weight: medium;
 }
 
 .offer p{
   line-height: 22px;
+  color: #444444;
 }
 
 .modal label{
@@ -235,32 +284,32 @@ background-color: rgb(225, 225, 225);
 }
 
 .write-us input{
-  border: 2px solid rgb(215, 220, 222);
+  border: 2px solid #d7dcde;
 }
 
 .write-us textarea{
-  border: 2px solid rgb(215, 220, 222);
+  border: 2px solid #d7dcde;
 }
 
 .write-us input:hover{
-  border-color: rgb(180, 185, 187);
+  border-color: #b4b9bb;
 }
 
 .write-us input:focus{
-  border-color: rgb(0, 0, 0);
+  border-color: #000000;
 }
 
 .write-us input:invalid{
-  border-color: rgb(231, 66, 70);
-  color: rgb(231, 66, 70);
+  border-color: #e74246;
+  color: #e74246;
 }
 
 .write-us textarea:hover{
-  border-color: rgb(180, 185, 187);
+  border-color: #b4b9bb;
 }
 
 .write-us textarea:focus{
-  border-color: rgb(0, 0, 0);
+  border-color: #000000;
 }
 
 .main-header-logo2 img:hover,
@@ -275,17 +324,21 @@ background-color: rgb(225, 225, 225);
 .main-title{
   font-size: 55px;
   line-height: 55px;
+  font-weight: medium;
 
-  background-color: rgb(238, 238, 238);
+  background-color: #eeeeee;
 }
 
 legend{
   font-weight:bold;
   text-transform: uppercase;
+  line-height: 30px;
 }
 
 .filter-value h3{
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .filter-value label{
@@ -297,25 +350,38 @@ legend{
   list-style: none;
 }
 
+.filter-grid label{
+  color: #283136;
+}
+
 .filter-special li{
   list-style: none;
 }
 
+.filter-special label{
+  color: #283136;
+}
+
 .sort-types{
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .sort-types a{
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
 }
 
 .sort-types a:hover{
-  color: rgba(0, 0, 0, 0.6);
+  color: #000000;
+  opacity: 0.6;
 }
 
 .sort-types a:focus,
 .sort-types a:active{
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .sort-types li{
@@ -332,10 +398,12 @@ legend{
 
 .layout-menu h3{
   text-transform: uppercase;
+  line-height: 30px;
 }
 
 .layout-menu p{
   line-height: 18px;
+  color: #666666;
 }
 
 fieldset label{
@@ -344,33 +412,37 @@ fieldset label{
 
 .btn-3:hover,
 .btn-3:focus{
-  background-color: rgb(231, 66, 70);
+  background-color: #e74246;
 }
 
 .btn-3:active{
-  background-color: rgb(215, 55, 59);
+  background-color: #d7373b;
 }
 
 .btn-text{
   text-transform: uppercase;
+  line-height: 18px;
 }
 
 .button-2{
-   background-color: rgb(238, 238, 238);
+   background-color: #eeeeee;
    border: none;
+
+   line-height: 18px;
 }
 
 .button-2:hover,
 .button-2:focus{
-  background-color: rgb(223, 223, 223);
+  background-color: #dfdfdf;
 }
 
 .button-2:active{
-  background-color: rgb(213, 213, 213);
-  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .btn-active:focus{
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(219, 219, 219);
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
 }
