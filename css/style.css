@@ -1,0 +1,369 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-navigation{
+  text-transform: uppercase;
+  line-height: 30px;
+
+  background-color: rgb(238, 238, 238);
+}
+
+.main-navigation a{
+  color: rgb(0, 0, 0);
+}
+
+.main-navigation a:hover{
+  color: rgb(251, 86, 90);
+}
+
+.main-navigation a:focus{
+  text-decoration: underline;
+  text-decoration-color: rgb(251, 86, 90);
+}
+
+.main-navigation a:active{
+  color: rgb(166, 166, 166);
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.slider{
+  background-color: rgb(238, 238, 238);
+}
+
+.slider-first{
+  background-image: url("img/index/nerds-index-slide1.png");
+}
+
+.slider-second{
+  background-image: url("img/index/nerds-index-slide2.png");
+}
+.slider-third{
+  background-image: url("img/index/nerds-index-slide3.png");
+}
+
+.slider-head{
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-button{
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(251, 86, 90);
+}
+
+.slider-button:hover,
+.slider-button:focus{
+  background-color: rgb(231, 66, 70);
+}
+
+.slider-button:active{
+  background-color: rgb(215, 55, 59);
+  color: rgba(227, 115, 118, 0.3);
+}
+
+.service-red{
+  background-image: url("img/index/illustration-1.jpg");
+}
+
+.service-green{
+  background-image: url("img/index/illustration-2.jpg");
+}
+
+.service-yellow{
+  background-image: url("img/index/illustration-3.jpg");
+}
+
+.service-head{
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.service-btn{
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.red-btn{
+  background-color: rgb(251, 86, 90);
+}
+
+.red-btn:hover,
+.red-btn:focus{
+  background-color: rgb(231, 66, 70);
+}
+
+.red-btn:active{
+  background-color: rgb(215, 55, 59);
+  color: rgba(227, 115 ,118, 0.3);
+}
+
+.green-btn{
+  background-color: rgb(0, 202, 116);
+}
+
+.green-btn:hover,
+.green-btn:focus{
+  background-color: rgb(0, 188, 108);
+}
+
+.green-btn:active{
+  background-color: rgb(0, 153, 102);
+  color: rgba(77, 196, 145, 0.3);
+}
+
+.yellow-btn{
+  background-color: rgb(239, 200, 74);
+}
+
+.yellow-btn:hover,
+.yellow-btn:focus{
+  background-color: rgb(234, 181, 52);
+}
+
+.yellow-btn:active{
+  background-color: rgb(229, 167, 34);
+  color: rgba(237, 194, 101, 0.3);
+}
+
+.slogan{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.text h4{
+  text-transform: uppercase;
+}
+
+.statistics b{
+  text-transform: uppercase;
+}
+
+.clients-list{
+  list-style: none;
+}
+
+.clients-list img{
+  opacity: 0.2;
+}
+
+.clients-list img:hover,
+.clients-list img:focus{
+ opacity: 1;
+}
+
+.clients-list img:active{
+  opacity: 0.1;
+}
+.our-contacts{
+  background-image: url("img/index/map-marker.png");
+}
+
+.our-contacts b{
+  text-transform: uppercase;
+}
+
+.out-contacts p{
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+}
+button.button{
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(251, 86, 90);
+}
+
+.icon-list{
+  list-style: none;
+}
+
+.icon-list a{
+background-color: rgb(225, 225, 225);
+}
+
+.icon-list a:hover,
+.icon-list a:focus{
+  background-color: rgb(231, 66, 70);
+}
+
+.icon-list a:active{
+  background-color: rgb(215, 55, 59);
+}
+
+.icon-list img:active{
+  background-color: rgb(227, 115, 118);
+  opacity: 0.3;
+}
+
+.offer b{
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.offer p{
+  line-height: 22px;
+}
+
+.modal label{
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.write-us input{
+  border: 2px solid rgb(215, 220, 222);
+}
+
+.write-us textarea{
+  border: 2px solid rgb(215, 220, 222);
+}
+
+.write-us input:hover{
+  border-color: rgb(180, 185, 187);
+}
+
+.write-us input:focus{
+  border-color: rgb(0, 0, 0);
+}
+
+.write-us input:invalid{
+  border-color: rgb(231, 66, 70);
+  color: rgb(231, 66, 70);
+}
+
+.write-us textarea:hover{
+  border-color: rgb(180, 185, 187);
+}
+
+.write-us textarea:focus{
+  border-color: rgb(0, 0, 0);
+}
+
+.main-header-logo2 img:hover,
+.main-header-logo2 img:focus{
+  opacity: 0.8;
+}
+
+.main-header-logo2 img:active{
+  opacity: 0.3;
+}
+
+.main-title{
+  font-size: 55px;
+  line-height: 55px;
+
+  background-color: rgb(238, 238, 238);
+}
+
+legend{
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.filter-value h3{
+  text-transform: uppercase;
+}
+
+.filter-value label{
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-grid li{
+  list-style: none;
+}
+
+.filter-special li{
+  list-style: none;
+}
+
+.sort-types{
+  text-transform: uppercase;
+}
+
+.sort-types a{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-types a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-types a:focus,
+.sort-types a:active{
+  color: rgb(0, 0, 0);
+}
+
+.sort-types li{
+  list-style: none;
+}
+
+.sort h3{
+  text-transform: uppercase;
+}
+
+.image-content{
+  list-style: none;
+}
+
+.layout-menu h3{
+  text-transform: uppercase;
+}
+
+.layout-menu p{
+  line-height: 18px;
+}
+
+fieldset label{
+  line-height: 20px;
+}
+
+.btn-3:hover,
+.btn-3:focus{
+  background-color: rgb(231, 66, 70);
+}
+
+.btn-3:active{
+  background-color: rgb(215, 55, 59);
+}
+
+.btn-text{
+  text-transform: uppercase;
+}
+
+.button-2{
+   background-color: rgb(238, 238, 238);
+   border: none;
+}
+
+.button-2:hover,
+.button-2:focus{
+  background-color: rgb(223, 223, 223);
+}
+
+.button-2:active{
+  background-color: rgb(213, 213, 213);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-active:focus{
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(219, 219, 219);
+}
