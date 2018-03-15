@@ -27,17 +27,15 @@ a{
   color: #000000;
 }
 
-.main-navigation a:hover{
+.main-navigation a:hover,
+.main-navigation a:focus{
   color: #fb565a;
 }
 
-.main-navigation a:focus{
-  text-decoration: underline;
-  text-decoration-color: #fb565a;
-}
-
 .main-navigation a:active{
-  color: #a6a6a6;
+  color: #000000;
+
+  opacity: 0.3;
 }
 
 .site-navigation{
@@ -73,10 +71,13 @@ a{
 
 .slider-button{
   line-height: 18px;
+  color: #ffffff;
   text-transform: uppercase;
 
-  color: #ffffff;
   background-color: #fb565a;
+
+  cursor: pointer;
+}
 }
 
 .slider-button:hover,
@@ -85,8 +86,9 @@ a{
 }
 
 .slider-button:active{
-  background-color: #d7373b;
   color: #e37376;
+
+  background-color: #d7373b;
   opacity: 0.3;
 }
 
@@ -120,8 +122,11 @@ a{
 }
 
 .service-btn{
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
 }
 .red-btn{
   background-color: #fb565a;
@@ -133,8 +138,9 @@ a{
 }
 
 .red-btn:active{
-  background-color: #d7373b;
   color: #e37376;
+
+  background-color: #d7373b;
   opacity: 0.3;
 }
 
@@ -148,8 +154,9 @@ a{
 }
 
 .green-btn:active{
-  background-color: #009966;
   color: #4dc491;
+
+  background-color: #009966;
   opacity: 0.3;
 }
 
@@ -163,8 +170,9 @@ a{
 }
 
 .yellow-btn:active{
-  background-color: #e5a722;
   color: #edc265;
+
+  background-color: #e5a722;
   opacity: 0.3;
 }
 
@@ -186,8 +194,8 @@ a{
 }
 
 .statistics b{
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 th{
@@ -195,9 +203,13 @@ th{
   line-height: 10px;
 }
 
+sup{
+  font-size: 27px;
+}
+
 td{
-  color: #283136;
   line-height: 18px;
+  color: #283136;
 }
 
 .clients-list{
@@ -210,7 +222,7 @@ td{
 
 .clients-list img:hover,
 .clients-list img:focus{
- opacity: 1;
+  opacity: 1;
 }
 
 .clients-list img:active{
@@ -222,9 +234,9 @@ td{
 }
 
 .our-contacts b{
-  text-transform: uppercase;
   font-weight: bold;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts-p{
@@ -239,10 +251,24 @@ td{
 button.button{
   line-height: 18px;
   text-transform: uppercase;
-  border: none;
-
   color: #ffffff;
+
+  border: none;
   background-color: #fb565a;
+
+  cursor: pointer;
+}
+
+button.button:hover,
+button.button:focus{
+  background-color: #e74246;
+}
+
+button.button:active{
+  color: #e37376;
+
+  background-color: #d7373b;
+  opacity: 0.3;
 }
 
 .icon-list{
@@ -250,7 +276,7 @@ button.button{
 }
 
 .icon-list a{
-background-color: #e1e1e1;
+  background-color: #e1e1e1;
 }
 
 .icon-list a:hover,
@@ -270,12 +296,17 @@ background-color: #e1e1e1;
 .offer b{
   font-size: 36px;
   line-height: 36px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .offer p{
   line-height: 22px;
   color: #444444;
+}
+
+.modal h2{
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .modal label{
@@ -300,8 +331,9 @@ background-color: #e1e1e1;
 }
 
 .write-us input:invalid{
-  border-color: #e74246;
   color: #e74246;
+
+  border-color: #e74246;
 }
 
 .write-us textarea:hover{
@@ -310,6 +342,16 @@ background-color: #e1e1e1;
 
 .write-us textarea:focus{
   border-color: #000000;
+}
+
+.write-us input::-webkit-input-placeholder{
+  line-height: 18px;
+  color: #a1a1a1;
+}
+
+.write-us textarea::-webkit-input-placeholder{
+  line-height: 18px;
+  color: #a1a1a1;
 }
 
 .main-header-logo2 img:hover,
@@ -321,29 +363,31 @@ background-color: #e1e1e1;
   opacity: 0.3;
 }
 
-.main-title{
+.main-title h1{
   font-size: 55px;
   line-height: 55px;
-  font-weight: medium;
+  font-weight: 500;
 
   background-color: #eeeeee;
 }
 
 legend{
+  line-height: 30px;
   font-weight:bold;
   text-transform: uppercase;
-  line-height: 30px;
 }
 
 .filter-value h3{
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .filter-value label{
   line-height: 22px;
   text-transform: uppercase;
+  color: #283136;
 }
 
 .filter-grid li{
@@ -363,10 +407,15 @@ legend{
 }
 
 .sort-types{
-  text-transform: uppercase;
-  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sort h3{
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .sort-types a{
@@ -388,17 +437,14 @@ legend{
   list-style: none;
 }
 
-.sort h3{
-  text-transform: uppercase;
-}
-
 .image-content{
   list-style: none;
 }
 
 .layout-menu h3{
-  text-transform: uppercase;
   line-height: 30px;
+  text-transform: uppercase;
+
 }
 
 .layout-menu p{
@@ -420,15 +466,18 @@ fieldset label{
 }
 
 .btn-text{
-  text-transform: uppercase;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .button-2{
-   background-color: #eeeeee;
-   border: none;
+  line-height: 18px;
 
-   line-height: 18px;
+  background-color: #eeeeee;
+  border: none;
+
+  cursor: pointer;
+}
 }
 
 .button-2:hover,
@@ -437,8 +486,9 @@ fieldset label{
 }
 
 .button-2:active{
-  background-color: #d5d5d5;
   color: #000000;
+
+  background-color: #d5d5d5;
   opacity: 0.3;
 }
 
