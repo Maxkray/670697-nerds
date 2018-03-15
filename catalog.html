@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="#" class="main-header-logo" title="Переход на главную страницу" aria-label="Логотип">
+			<a href="index.html" class="main-header-logo2" title="Переход на главную страницу" aria-label="Логотип">
 				<img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
 			</a>
 			<ul class="site-navigation">
@@ -30,7 +33,7 @@
           <p class="filter-slider"></p>
           <label for="min">От</label>
           <input type="number" name="min" id="min">
-          <label id="max">До</label>
+          <label for="max">До</label>
           <input type="number" name="max" id="max">
       </div>
 			<fieldset class="filter-grid">
@@ -55,7 +58,7 @@
               <span class="checkbox-indicator"></span>
            </li>
             <li><input type="checkbox" name="special-block" id="special-2" value="features">
-              <<label for="special-2">Блок приемуществ</label>
+              <label for="special-2">Блок приемуществ</label>
               <span class="checkbox-indicator"></span>
             </li>
             <li><input type="checkbox" name="special-news" id="special-3" value="news" checked>
@@ -77,13 +80,13 @@
 		</section>
 		<section class="sort">
 			<h2 class="visually-hidden">Типы</h2>
-			<h3>Сортировать</h3>
+			<h3>Сортировать:</h3>
 			<ul class="sort-types">
-				<li><button class="by-price">По цене</button></li>
-				<li><button  class="by-type">По типу</button></li>
-				<li><button  class="by-name">По названию</button></li>
-				<li><button  class="by-down" aria-label="По уменьшению"></button></li>
-				<li><button  class="by-up" aria-label="По возрастанию"></button></li>
+				<li><a href="#" title="распределить по цене" class="by-price">По цене</a></li>
+				<li><a href="#" title="распределить по типу" class="by-type">По типу</button></a></li>
+				<li><a href="#" title="распределить по названию" class="by-name">По названию</a></li>
+				<li><a href="#" title="распределить по уменьшению" class="by-down" aria-label="По уменьшению"></a></li>
+				<li><a href="#" title="распределить по возрастанию" class="by-up" aria-label="По возрастанию"></a></li>
 			</ul>
 		</section>
 		<section class="price-list-layouts">
@@ -94,7 +97,7 @@
 					<div class="layout-menu">
 						<h3>Sedona</h3>
 						<p>Информационный сайт<br> для туристов</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
@@ -102,7 +105,7 @@
 					<div class="layout-menu">
 						<h3>Pink app</h3>
 						<p>Продуктивный лендинг<br> приложения для IOS и Android</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
@@ -110,15 +113,15 @@
 					<div class="layout-menu">
 						<h3>Barbershop</h3>
 						<p>Сайт салона красоты.<br> Для мужчин, да.</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
 					<img src="img/catalog/img-mishka.jpeg" width="360" height="575" alt="mishka" >
 					<div class="layout-menu">
 						<h3>mishka</h3>
-						<p>Интернет-магазин<br>вязанных игрушек</p>
-						<button class="button">9 900 руб.</button>
+						<p>Интернет–магазин<br>вязанных игрушек</p>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
@@ -126,7 +129,7 @@
 					<div class="layout-menu">
 						<h3>A Plus</h3>
 						<p>Лендинг курсов повышения<br> квалификации</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 				<li>
@@ -134,7 +137,7 @@
 					<div class="layout-menu">
 						<h3>Кваст</h3>
 						<p>Промо-сайт производителя<br> крафтового кваса</p>
-						<button class="button">9 900 руб.</button>
+						<button class="button btn-3">9 900 руб.</button>
 					</div>
 				</li>
 			</ul>
@@ -142,10 +145,10 @@
 		<section class="content-navigation">
 			<h2 class="visually-hidden">Страницы</h2>
 			<nav class="pages">
-				<button class="button-2">1</button>
-				<button class="button-2">2</button>
-				<button class="button-2">3</button>
-				<button class="button-2 btn-text">Следующая</button>
+				<button class="button-2 btn-active">1</button>
+				<button class="button-2 btn-active">2</button>
+				<button class="button-2 btn-active">3</button>
+				<button class="button-2 btn-text btn-active">Следующая</button>
 			</nav>
 		</section>
 	</main>
@@ -153,8 +156,8 @@
 		<section class="our-contacts">
 			<h2 class="visually-hidden">Адрес</h2>
 			<b>Nërds design studio</b>
-			<p>191186,Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-			<p>тел. +7(812)275-75-75</p>
+			<p class="contacts-p">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+			<p class="phone"><a href="tel:+78122757575" title="Позвонить нам">тел. +7(812)275-75-75</a></p>
 			<button class="button" aria-label="Напишите нам">Напишите нам</button>
 		  <img src="img/index/map.jpg" width="1440" height="416" alt="ул. Б. Конюшенная, д. 19/8">
     </section>
@@ -166,7 +169,7 @@
 				<li><a href="#" class="social-insta" title="insta" aria-label="Инстаграм"><img src="img/index/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
 			</ul>
 			<div class="offer">
-				<b>Давайте дружить,это выгодно!</b>
+				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</section>
@@ -179,7 +182,7 @@
           </p>
           <p>
             <label for="write-mail">Ваш e-mail:</label>
-              <input type="text" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
+              <input type="email" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
           </p>
           <p>
           <label for="write-text-us">Текст письма:</label>
