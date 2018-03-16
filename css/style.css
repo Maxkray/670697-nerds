@@ -16,7 +16,19 @@ a{
   text-decoration: none;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-navigation{
+  display: flex;
+  flex-direction: column;
+
   text-transform: uppercase;
   line-height: 30px;
 
@@ -39,28 +51,47 @@ a{
 }
 
 .site-navigation{
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.busket{
+  width: 120px;
+}
+
 .slider{
+  margin: 0;
+  padding: 0;
+
   background-color: #eeeeee;
 }
 
 .slider-first{
+  width: 380px;
+
   background-image: url("../img/index/nerds-index-slide1.png");
   background-repeat: no-repeat;
 }
 
 .slider-second{
+  width: 380px;
+
   background-image: url("../img/index/nerds-index-slide2.png");
   background-repeat: no-repeat;
 }
 .slider-third{
+  width: 380px;
+
   background-image: url("../img/index/nerds-index-slide3.png");
   background-repeat: no-repeat;
 }
 
 .slider-head{
+  width: 380px;
+
   font-size: 55px;
   line-height: 55px;
 }
