@@ -29,33 +29,37 @@
       <section class="slider">
         <div class="container">
           <h2 class="visually-hidden">Наше приемущество</h2>
-          <div class="slider-first">
-            <div class="slider-wrapper">
-              <p class="slider-head">Долго, дорого,<br>скрупулезно.</p>
-              <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-              <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slider-second">
-            <div class="slider-wrapper">
-              <p class="slider-head">Любим математику<br>как никто другой</p>
-              <p class="slide-description">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-              <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slider-third">
-            <div class="slider-wrapper">
-              <p class="slider-head">Только ночь,<br>только хардкор</p>
-              <p class="slide-description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-              <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
-            </div>
-          </div>
+          <div class="slider-wrapper-head">
           <input type="radio" id="btn-1" name="toggle" value="slider-1" checked>
           <input type="radio" id="btn-2" name="toggle" value="slider-2">
           <input type="radio" id="btn-3" name="toggle" value="slider-3">
           <label for="btn-1"></label>
           <label for="btn-2"></label>
           <label for="btn-3"></label>
+            <div class="slider-wrapper">
+              <div class="slide slider-first">
+                <div class="slide-wrapper">
+                  <p class="slider-head">Долго, дорого,<br>скрупулезно.</p>
+                  <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+                  <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide slider-second">
+                <div class="slide-wrapper">
+                  <p class="slider-head">Любим математику<br>как никто другой</p>
+                  <p class="slide-description">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                  <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide slider-third">
+                <div class="slide-wrapper">
+                  <p class="slider-head">Только ночь,<br>только хардкор</p>
+                  <p class="slide-description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+                  <a href="#" class="slider-button" title="Узнать больше о продукции">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="services">
@@ -159,23 +163,27 @@
         </div>
       </section>
       <section class="modal modal-write">
-        <h2>Напишите нам</h2>
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="write-name">Ваше имя:</label>
-              <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
-          </p>
-          <p>
-            <label for="write-mail">Ваш e-mail:</label>
-              <input type="email" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
-          </p>
-          <p>
-            <label for="write-text-us">Текст письма:</label>
-              <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
+            <div class="modal-form-row">
+              <h2>Напишите нам</h2>
+              <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
+            </div>
+            <div class="modal-form-login">
+              <div class="input-text-wrapper">
+                <label for="write-name">Ваше имя:</label>
+                <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
+              </div>
+              <div class="input-email-wrapper">
+                <label for="write-mail">Ваш e-mail:</label>
+                <input type="email" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
+              </div>
+            </div>
+            <div class="modal-form-comment">
+              <label for="write-text-us">Текст письма:</label>
+              <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us" rows="5"></textarea>
+              <button class="button" type="submit">Отправить</button>
+            </div>
         </form>
-        <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
       </section>
     </footer>
     </body>
