@@ -16,7 +16,19 @@ a{
   text-decoration: none;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-navigation{
+  display: flex;
+  flex-direction: column;
+
   text-transform: uppercase;
   line-height: 30px;
 
@@ -39,23 +51,57 @@ a{
 }
 
 .site-navigation{
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.busket{
+  width: 120px;
+}
+
 .slider{
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   background-color: #eeeeee;
+
+  overflow: hidden;
+}
+
+.slider-wrapper-head{
+  width: 1160px;
+  overflow: hidden;
+}
+
+.slider-wrapper{
+  display: flex;
+  width: 3480px;
+}
+
+.slide-wrapper{
+  width: 380px;
 }
 
 .slider-first{
+  width: 1160px;
+
   background-image: url("../img/index/nerds-index-slide1.png");
   background-repeat: no-repeat;
 }
 
 .slider-second{
+  width: 1160px;
+
   background-image: url("../img/index/nerds-index-slide2.png");
   background-repeat: no-repeat;
 }
 .slider-third{
+  width: 1160px;
+
   background-image: url("../img/index/nerds-index-slide3.png");
   background-repeat: no-repeat;
 }
@@ -89,6 +135,36 @@ a{
 
   background-color: #d7373b;
   opacity: 0.3;
+}
+
+.slide{
+  background-position: right;
+}
+
+.slider-wrapper {
+  transition: transform 0.8s ease;
+}
+
+#btn-1:checked ~ .slider-wrapper {
+  transform: translate(0);
+}
+
+
+#btn-2:checked ~ .slider-wrapper{
+  transform: translate(-1160px);
+}
+
+
+#btn-3:checked ~ .slider-wrapper{
+  transform: translate(-2320px);
+}
+
+
+.service{
+  width: 1100px;
+  margin-top: 80px;
+  padding-top: 140px;
+
 }
 
 .service-red{
@@ -180,6 +256,13 @@ a{
   line-height: 45px;
 }
 
+.text{
+  margin-top: 160px;
+  margin-right: 140px;
+
+  width: 660px;
+}
+
 .text h4{
   text-transform: uppercase;
 }
@@ -192,9 +275,22 @@ a{
   color: #283136;
 }
 
+.statistics{
+  margin-top: 120px;
+}
+
 .statistics b{
+  display: block;
+  margin-top: 50px;
+
   font-weight: bold;
   text-transform: uppercase;
+}
+
+table{
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
 }
 
 th{
@@ -207,11 +303,19 @@ sup{
 }
 
 td{
+  margin-top: 30px;
+
   line-height: 18px;
   color: #283136;
 }
 
 .clients-list{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+
   list-style: none;
 }
 
@@ -232,19 +336,31 @@ td{
   background-repeat: no-repeat;
 }
 
+.our-contacts img{
+  width: 100%;
+  min-height: 420px;
+}
+
 .our-contacts b{
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.contacts-p{
+.contacts-addres{
   line-height: 18px;
   color: #666666;
 }
 
 .phone a{
   color: #666666;
+}
+
+.addres-write-us{
+  margin-top: -350px;
+  padding: 50px;
+  background-color: #ffffff;
+  height: 160px;
 }
 
 button.button{
@@ -271,6 +387,10 @@ button.button:active{
 }
 
 .icon-list{
+  margin: 0;
+  padding: 0;
+  width: 260px;
+
   list-style: none;
 }
 
@@ -292,6 +412,11 @@ button.button:active{
   opacity: 0.3;
 }
 
+.offer{
+  width: 560px;
+  margin-right: 100px;
+}
+
 .offer b{
   font-size: 36px;
   line-height: 36px;
@@ -308,6 +433,51 @@ button.button:active{
   line-height: 45px;
 }
 
+.modal-form-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+}
+
+.modal-form-login{
+  display: flex;
+  margin-bottom: 35px;
+  width: 760px;
+
+}
+
+.modal-form-login input[type="text"],
+input[type="email"]{
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.input-text-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-email-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.modal-form-comment{
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.modal-form-comment textarea{
+  margin-bottom: 50px;
+}
+
+.modal-close{
+  height: 25px;
+}
+
 .modal label{
   line-height: 18px;
   font-weight: bold;
@@ -318,6 +488,7 @@ button.button:active{
 }
 
 .write-us textarea{
+  width: 100%;
   border: 2px solid #d7dcde;
 }
 
@@ -362,12 +533,26 @@ button.button:active{
   opacity: 0.3;
 }
 
+.main-title{
+    background-color: #eeeeee;
+}
+
 .main-title h1{
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  margin-left: 220px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
 
-  background-color: #eeeeee;
+.filter-wrapper{
+  flex-direction: column;
+  margin-top: 65px;
+
 }
 
 legend{
@@ -376,7 +561,15 @@ legend{
   text-transform: uppercase;
 }
 
+.filter-value{
+  margin-bottom: 65px;
+  width: 260px;
+
+}
+
 .filter-value h3{
+  margin-bottom: 60px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -389,6 +582,28 @@ legend{
   color: #283136;
 }
 
+input[type="number"]{
+  width: 80px;
+
+  background-color: #eeeeee;
+}
+
+label[for="max"]{
+  margin-left: 30px;
+}
+
+.filter-grid {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+fieldset{
+  width: 260px;
+
+  border: none;
+}
+
 .filter-grid li{
   list-style: none;
 }
@@ -396,6 +611,13 @@ legend{
 .filter-grid label{
   color: #283136;
 }
+
+.filter-special{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 
 .filter-special li{
   list-style: none;
@@ -405,7 +627,25 @@ legend{
   color: #283136;
 }
 
+.main-container{
+  margin-left: 140px
+}
+
+.sort{
+  width: 760px;
+}
+
+.sort-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  width: 760px;
+}
+
 .sort-types{
+  padding: 0;
+  margin: 0;
+
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
@@ -437,7 +677,21 @@ legend{
 }
 
 .image-content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+}
+
+.image-content li{
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+
+.image-content li:nth-child(2n) {
+  margin-right: 0;
 }
 
 .layout-menu h3{
@@ -455,6 +709,10 @@ fieldset label{
   line-height: 20px;
 }
 
+.pages{
+  margin-bottom: 60px;
+}
+
 .btn-3:hover,
 .btn-3:focus{
   background-color: #e74246;
@@ -467,6 +725,8 @@ fieldset label{
 .btn-text{
   line-height: 18px;
   text-transform: uppercase;
+
+  width: 260px;
 }
 
 .button-2{
