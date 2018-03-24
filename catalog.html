@@ -12,13 +12,13 @@
     <h1 class="visually-hidden">Дизайн студия Nërds</h1>
     <nav class="main-navigation">
       <div class="container">
-        <a class="main-header-logo">
+        <a href="index.html" title="На главную страницу" class="main-header-logo">
           <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="studio.html" title="О студии Nërds">Студия</a></li>
           <li><a href="clients.html" title="О клиентах">Клиенты</a></li>
-          <li><a href="catalog.html" title="О магазине">Магазин</a></li>
+          <li class="current"><a href="catalog.html" title="О магазине">Магазин</a></li>
           <li><a href="contacts.html" title="Наши контакты">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -37,14 +37,22 @@
     <section class="filters">
 			<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="filter-wrapper">
-        <div class="filter-value">
-            <h3>Стоимость:</h3>
-            <p class="filter-slider"></p>
-            <label for="min">От</label>
-            <input type="number" name="min" id="min">
-            <label for="max">До</label>
-            <input type="number" name="max" id="max">
-        </div>
+        <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+        </fieldset>
 			    <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
@@ -97,57 +105,101 @@
 				    <li><a href="#" title="распределить по цене" class="by-price">По цене</a></li>
 				    <li><a href="#" title="распределить по типу" class="by-type">По типу</button></a></li>
 				    <li><a href="#" title="распределить по названию" class="by-name">По названию</a></li>
-				    <li><a href="#" title="распределить по уменьшению" class="by-down" aria-label="По уменьшению"></a></li>
-				    <li><a href="#" title="распределить по возрастанию" class="by-up" aria-label="По возрастанию"></a></li>
 			    </ul>
+          <div class="sort-up-down">
+            <button type="button" class="arrow-down arrow-active">По убыванию</button>
+            <button type="button" class="arrow-up">По возрастанию</button>
+          </div>
         </div>
       </section>
 		    <section class="price-list-layouts">
 			    <h2 class="visually-hidden">Макеты</h2>
 			    <div class="layouts-wrapper">
             <ul class="image-content">
-  				    <li>
-  					    <img src="img/catalog/img-sedona.jpeg" width="360" height="575" alt="Sedona" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-sedona.jpeg" width="360" height="575" alt="Sedona" >
   					    <div class="layout-menu">
   						    <h3>Sedona</h3>
   						    <p>Информационный сайт<br> для туристов</p>
   						    <button class="button btn-3">9 900 руб.</button>
   					    </div>
   				    </li>
-  				    <li>
-  					    <img src="img/catalog/img-pink.jpeg" width="360" height="575" alt="Pink app" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-pink.jpeg" width="360" height="575" alt="Pink app" >
   					    <div class="layout-menu">
   						    <h3>Pink app</h3>
   						    <p>Продуктивный лендинг<br> приложения для IOS и Android</p>
   						    <button class="button btn-3">9 900 руб.</button>
   					    </div>
   				    </li>
-  				    <li>
-  					    <img src="img/catalog/img-barbershop.jpeg" width="360" height="575" alt="Barbershop" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-barbershop.jpeg" width="360" height="575" alt="Barbershop" >
   					    <div class="layout-menu">
   						    <h3>Barbershop</h3>
   						    <p>Сайт салона красоты.<br> Для мужчин, да.</p>
   						    <button class="button btn-3">9 900 руб.</button>
   					    </div>
   				    </li>
-  				    <li>
-  					    <img src="img/catalog/img-mishka.jpeg" width="360" height="575" alt="mishka" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-mishka.jpeg" width="360" height="575" alt="mishka" >
   					    <div class="layout-menu">
   						    <h3>mishka</h3>
   						    <p>Интернет–магазин<br>вязанных игрушек</p>
   						    <button class="button btn-3">9 900 руб.</button>
   					    </div>
   				    </li>
-  				    <li>
-  					    <img src="img/catalog/img-aplus.jpeg" width="360" height="575" alt="Aplus" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-aplus.jpeg" width="360" height="575" alt="Aplus" >
   					    <div class="layout-menu">
   						    <h3>A Plus</h3>
   						    <p>Лендинг курсов повышения<br> квалификации</p>
   						    <button class="button btn-3">9 900 руб.</button>
   					    </div>
   				    </li>
-  				    <li>
-  					    <img src="img/catalog/img-kvast.jpeg" width="360" height="575" alt="Kvast" >
+  				    <li class="image-content-item">
+  					    <div class="head-wrapper">
+                  <ul class="head-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <img src="img/catalog/img-kvast.jpeg" width="360" height="575" alt="Kvast" >
   					    <div class="layout-menu">
   						    <h3>Кваст</h3>
   						    <p>Промо-сайт производителя<br> крафтового кваса</p>
@@ -160,10 +212,10 @@
   		  <section class="content-navigation">
   			  <h2 class="visually-hidden">Страницы</h2>
   			  <nav class="pages">
-  				  <button class="button-2 btn-active">1</button>
-  				  <button class="button-2 btn-active">2</button>
-  				  <button class="button-2 btn-active">3</button>
-  				  <button class="button-2 btn-text btn-active">Следующая</button>
+  				  <button class="btn-page button-2 btn-active">1</button>
+  				  <button class="btn-page button-2">2</button>
+  				  <button class="btn-page button-2">3</button>
+  				  <button class="button-2 btn-text">Следующая</button>
   			 </nav>
   		  </section>
 	 </div>
@@ -177,7 +229,7 @@
             <b>Nërds design studio</b>
             <p class="contacts-addres">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone"><a href="tel:+78122757575" title="Позвонить нам">тел. +7(812)275-75-75</a></p>
-            <button class="button" type="button">Напишите нам</button>
+            <button class="button write-us-button" type="button">Напишите нам</button>
           </div>
         </div>
       </section>
