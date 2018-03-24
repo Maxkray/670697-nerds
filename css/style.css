@@ -91,7 +91,7 @@ a{
   width: 440px;
   margin: 0;
   padding: 0;
-  margin-right: 57px;
+  margin-right: 45px;
 
   list-style: none;
 }
@@ -100,6 +100,7 @@ a{
   display: flex;
   padding: 0;
   margin: 0;
+  margin-right: 4px;
   max-width: 120px;
 
 
@@ -109,14 +110,14 @@ a{
 
 .user-navigation .busket{
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .busket::before {
   content: "";
 
   position: absolute;
-  top: 86px;
+  top: 83px;
   left: 0;
 
   width: 15px;
@@ -156,7 +157,7 @@ a{
 
 .slider-controls {
   position: absolute;
-  left: 51%;
+  left: 639px;
   bottom: 104px;
   z-index: 100;
 
@@ -199,7 +200,7 @@ a{
 .slider-wrapper{
   display: flex;
   width: 3480px;
-  }
+}
 
 .slider-first{
   width: 1160px;
@@ -222,11 +223,13 @@ a{
 }
 
 .slider-head{
-  max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
+  max-width: 600px;
+
 
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
 }
 
@@ -241,7 +244,7 @@ a{
 .slider-button{
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -270,9 +273,9 @@ a{
 }
 
 .slide{
-  padding: 78px 0 80px 0;
+  padding: 67px 0 80px 0;
 
-  background-position: right;
+  background-position: 99% -10px;
 }
 
 #btn-1:checked ~ .slider-wrapper {
@@ -308,19 +311,25 @@ a{
 .service{
   width: 1100px;
   margin-top: 80px;
+  margin-bottom: -86px;
   padding-top: 140px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+
 
   border-bottom: 2px solid #f1f1f1;
 
 }
 
 .service-red{
+  padding-right: 36px;
+
   background-image: url("../img/index/illustration-1.jpg");
   background-repeat: no-repeat;
 }
 
 .service-green{
+  padding-right: 39px;
+
   background-image: url("../img/index/illustration-2.jpg");
   background-repeat: no-repeat;
 }
@@ -331,12 +340,16 @@ a{
 }
 
 .service-head{
+  margin-top: 31px;
+
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .service-description{
+  margin-top: -8px;
+
   color: #283136;
 }
 
@@ -347,7 +360,8 @@ a{
 .service-btn{
   display: block;
   width: 160px;
-  padding: 13px 0;
+  margin-top: 31px;
+  padding: 16px 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -412,7 +426,7 @@ a{
 
 .slogan{
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   font-size: 45px;
   line-height: 45px;
@@ -429,6 +443,7 @@ a{
 
 .text h4{
   margin: 0;
+  margin-top: 39px;
   margin-bottom: 25px;
 
   font-weight: 700;
@@ -436,10 +451,7 @@ a{
 
 }
 
-.text p{
-  margin: 0;
-  margin-bottom: 40px;
-
+.text {
   color: #283136;
 }
 
@@ -479,10 +491,16 @@ a{
   margin-top: 120px;
 }
 
+.statistics img{
+  top: 6px;
+  left: -2px;
+  position: relative;
+}
+
 .statistics b{
   display: block;
-  margin-top: 50px;
-  margin-left: 15px;
+  margin-top: 33px;
+  margin-left: 17px;
 
 
   font-weight: bold;
@@ -497,6 +515,10 @@ table{
 }
 
 th{
+  padding-right: 29px;
+  padding-top: 7px;
+
+
   font-size: 45px;
   line-height: 10px;
 }
@@ -508,7 +530,7 @@ sup{
 td{
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 24px;
 
   width: 33.3%;
   height: 60px;
