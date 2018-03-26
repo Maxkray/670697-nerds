@@ -5,7 +5,7 @@
 	<title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -35,7 +35,8 @@
     </div>
 		<div class="container">
     <section class="filters">
-			<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+			<h2 class="visually-hidden">Фильтры по параметрам</h2>
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="filter-wrapper">
         <fieldset class="filter-item">
           <legend>Стоимость:</legend>
@@ -53,57 +54,57 @@
             </div>
           </div>
         </fieldset>
-			    <fieldset class="filter-grid">
-            <legend>Сетка:</legend>
+			  <fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+          <ul>
+            <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-1" value="adaptive" checked>
+              <label for="grid-1">Адаптивная</label>
+            </li>
+            <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-2" value="fixed">
+              <label for="grid-2">Фиксированная</label>
+            </li>
+            <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-3" value="rubber">
+              <label for="grid-3">Резиновая</label>
+            </li>
+          </ul>
+			  </fieldset>
+			  <fieldset class="filter-special">
+				  <legend>Особенности:</legend>
             <ul>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-1" value="adaptive" checked>
-                <label for="grid-1">Адаптивная</label>
+              <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-slider" id="special-1" checked value="slider">
+                <label for="special-1">Слайдер</label>
+                <span class="checkbox-indicator"></span>
               </li>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-2" value="fixed">
-                 <label for="grid-2">Фиксированная</label>
+              <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-block" id="special-2" value="features">
+                <label for="special-2">Блок приемуществ</label>
+                <span class="checkbox-indicator"></span>
               </li>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-3" value="rubber">
-                <label for="grid-3">Резиновая</label>
+              <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-news" id="special-3" value="news" checked>
+                <label for="special-3">Новости</label>
+                <span class="checkbox-indicator"></span>
+              </li>
+              <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-hall" id="special-4" value="passage">
+                <label for="special-4">Галерея</label>
+                <span class="checkbox-indicator"></span>
+              </li>
+              <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-busket" id="special-5" value="busket">
+                <label for="special-5">Корзина</label>
+                <span class="checkbox-indicator"></span>
               </li>
             </ul>
-			    </fieldset>
-			    <fieldset class="filter-special">
-				    <legend>Особенности:</legend>
-              <ul>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-slider" id="special-1" checked value="slider">
-                  <label for="special-1">Слайдер</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-block" id="special-2" value="features">
-                  <label for="special-2">Блок приемуществ</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-news" id="special-3" value="news" checked>
-                  <label for="special-3">Новости</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-hall" id="special-4" value="passage">
-                  <label for="special-4">Галерея</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-busket" id="special-5" value="busket">
-                  <label for="special-5">Корзина</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-              </ul>
-			     </fieldset>
-          <button class="button-2 btn-text">Показать</button>
-          </div>
-        </form>
-      </section>
-		  <div class="main-container">
+			  </fieldset>
+        <button class="button-2 btn-text">Показать</button>
+        </div>
+      </form>
+    </section>
+		<div class="main-container">
       <section class="sort">
 			  <h2 class="visually-hidden">Типы</h2>
 			  <div class="sort-wrapper">
           <h3>Сортировать:</h3>
 			    <ul class="sort-types">
 				    <li><a href="#" title="распределить по цене" class="by-price">По цене</a></li>
-				    <li><a href="#" title="распределить по типу" class="by-type">По типу</button></a></li>
+				    <li><a href="#" title="распределить по типу" class="by-type">По типу</a></li>
 				    <li><a href="#" title="распределить по названию" class="by-name">По названию</a></li>
 			    </ul>
           <div class="sort-up-down">
@@ -218,21 +219,22 @@
   				  <button class="button-2 btn-text next-btn">Следующая</button>
   			 </nav>
   		  </section>
-	 </div>
+	    </div>
+    </div>
   </main>
 	<footer class="main-footer">
-      <section class="our-contacts">
-        <h2 class="visually-hidden">Адрес</h2>
-        <img src="img/index/map.jpg" width="1440" height="416" alt="ул. Б. Конюшенная, д. 19/8">
-        <div class="container">
-          <div class="addres-write-us">
-            <b>Nërds design studio</b>
-            <p class="contacts-addres">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-            <p class="phone"><a href="tel:+78122757575" title="Позвонить нам">тел. +7(812)275-75-75</a></p>
-            <button class="button write-us-button" type="button">Напишите нам</button>
-          </div>
+    <section class="our-contacts">
+      <h2 class="visually-hidden">Адрес</h2>
+      <img src="img/index/map.jpg" width="1440" height="416" alt="ул. Б. Конюшенная, д. 19/8">
+      <div class="container">
+        <div class="addres-write-us">
+          <b>Nërds design studio</b>
+          <p class="contacts-addres">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone"><a href="tel:+78122757575" title="Позвонить нам">тел. +7(812)275-75-75</a></p>
+          <button class="button write-us-button" type="button">Напишите нам</button>
         </div>
-      </section>
+      </div>
+    </section>
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <div class="container">
@@ -245,7 +247,10 @@
               </svg>
             </a></li>
             <li><a href="#" class="social-button" title="FB" aria-label="Фейсбук">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff">
+                </path>
+              </svg>
             </a></li>
             <li><a href="#" class="social-button" title="insta" aria-label="Инстаграм">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -254,36 +259,36 @@
               </svg>
             </a></li>
           </ul>
-          </div>
-          <div class="offer">
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+        <div class="offer">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+      </div>
       </section>
 		<section class="modal modal-write">
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-            <div class="modal-form-row">
-              <h2>Напишите нам</h2>
-              <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
-            </div>
-            <div class="modal-form-login">
-              <div class="input-text-wrapper">
-                <label for="write-name">Ваше имя:</label>
-                <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
-              </div>
-              <div class="input-email-wrapper">
-                <label for="write-mail">Ваш e-mail:</label>
-                <input type="email" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
-              </div>
-            </div>
-            <div class="modal-form-comment">
-              <label for="write-text-us">Текст письма:</label>
-              <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us" rows="5"></textarea>
-              <button class="button modal-button" type="submit">Отправить</button>
-            </div>
-        </form>
-      </section>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-form-row">
+          <h2>Напишите нам</h2>
+          <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
+        </div>
+        <div class="modal-form-login">
+          <div class="input-text-wrapper">
+            <label for="write-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" class="write-name" id="write-name">
+          </div>
+          <div class="input-email-wrapper">
+            <label for="write-mail">Ваш e-mail:</label>
+            <input type="email" name="mail" placeholder="email@example.com" class="write-mail" id="write-mail">
+          </div>
+        </div>
+        <div class="modal-form-comment">
+          <label for="write-text-us">Текст письма:</label>
+          <textarea name="text-us" placeholder="В свободной форме" class="write-text-us" id="write-text-us" rows="5"></textarea>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
 	</footer>
 </body>
 </html>
