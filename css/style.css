@@ -667,6 +667,16 @@ li.list-item:not(:last-child){
   text-transform: uppercase;
 }
 
+.map-image iframe {
+  position: absolute;
+
+  margin-top: -416px;
+  width: 100%;
+  height: 416px;
+
+  border: none;
+}
+
 .contacts-addres{
   margin-top: 23px;
 
@@ -691,21 +701,6 @@ li.list-item:not(:last-child){
   width: 318px;
 
   background-color: #ffffff;
-}
-
-.addres-write-us::after {
-  content: "";
-
-  position: absolute;
-  top: 12%;
-  left: 171%;
-
-  display: block;
-  width: 290px;
-  height: 190px;
-
-  background-image: url(../img/index/map-marker.png);
-  background-repeat: no-repeat;
 }
 
 .write-us-button{
