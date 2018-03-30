@@ -227,6 +227,12 @@ a{
   display: flex;
 
   width: 3480px;
+
+  -webkit-transition-duration: 0.3s;
+
+       -o-transition-duration: 0.3s;
+
+          transition-duration: 0.3s;
 }
 
 .slider-first{
@@ -862,28 +868,56 @@ button.button:active{
           box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .modal-show{
   display: block;
 
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+
+          animation: bounce 0.6s;
 }
 
 .modal h2{
@@ -1527,6 +1561,7 @@ fieldset{
   margin: 0;
   margin-left: -12px;
   margin-bottom: 31px;
+  width: 767px;
 
   list-style: none;
 }
