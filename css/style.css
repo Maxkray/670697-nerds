@@ -112,9 +112,9 @@ a {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: flex-start;
 
-  width: 440px;
+  max-width: 485px;
   margin: 0;
   margin-right: 40px;
   padding: 0;
@@ -124,7 +124,8 @@ a {
 }
 
 .site-navigation li{
-  margin-right: 33px;
+  margin-right: 26px;
+  margin-left: 20px;
 }
 
 .user-navigation {
@@ -761,6 +762,9 @@ li.list-item:not(:last-child) {
 }
 
 .button {
+  padding-right: 27px;
+  padding-left: 27px;
+
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
@@ -1799,7 +1803,7 @@ input[type="email"] {
 .btn-page {
   display: block;
 
-  padding: 13px 0;
+  padding: 13px 17px;
   min-width: 50px;
   height: 50px;
 
