@@ -50,16 +50,18 @@ a {
 
 .main-header-logo {
   padding-top: 50px;
+}
 
+.logo-catalog {
   cursor: pointer;
 }
 
-.main-header-logo img:hover,
-.main-header-logo img:focus {
+.logo-catalog img:hover,
+.logo-catalog img:focus {
   opacity: 0.8;
 }
 
-.main-header-logo img:active {
+.logo-catalog img:active {
   opacity: 0.3;
 }
 
@@ -85,6 +87,11 @@ a {
 }
 
 .site-navigation a:hover,
+.site-navigation a:focus {
+  color: #fb565a;
+}
+
+.user-navigation a:hover,
 .user-navigation a:focus {
   color: #fb565a;
 }
@@ -96,12 +103,23 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation li.current a {
+.current a {
   padding-bottom: 2px;
 
   border-bottom: 2px solid #fb565a;
 
   color: #000000;
+}
+
+.current a:hover,
+.current a:focus {
+  color: #000000;
+}
+
+.current a:active {
+  color: #000000;
+
+  opacity: 1;
 }
 
 .site-navigation {
@@ -193,7 +211,7 @@ a {
   position: absolute;
   left: 50%;
   bottom: 100px;
-  z-index: 100;
+  z-index: 5;
 
   width: 160px;
   height: 18px;
@@ -666,6 +684,7 @@ li.list-item:not(:last-child) {
 .clients-list img:active {
   opacity: 0.1;
 }
+
 .our-contacts {
   position: relative;
 
@@ -733,7 +752,7 @@ li.list-item:not(:last-child) {
 
   padding: 16px 0;
   margin-top: 35px;
-  width: 219px;
+  width: 165px;
 
   font-size: 16px;
   line-height: 18px;
@@ -782,6 +801,8 @@ li.list-item:not(:last-child) {
 
 .button:active {
   background-color: #d7373b;
+
+  box-shadow: inset 0 3px 0px 0px #c13135;
 }
 
 .icon-list {
@@ -818,9 +839,11 @@ li.list-item:not(:last-child) {
 
 .icon-list .social-button:active {
   background-color: #d7373b;
+
+  box-shadow: inset 0 3px 0px 0px #c13135;
 }
 
-.icon-list .social-button:active path {
+.social-button:active path {
   background-color:  #e37376;
 
   opacity: 0.3;
@@ -868,7 +891,7 @@ li.list-item:not(:last-child) {
   position: fixed;
   top: 110px;
   left: 49%;
-  z-index: 2;
+  z-index: 6;
 
   display: none;
 
@@ -926,6 +949,32 @@ li.list-item:not(:last-child) {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-show {
@@ -1339,12 +1388,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-grid li:hover label:before,
-.filter-grid li:focus label:before {
+.filter-grid-item:hover label:before,
+.filter-grid-item:focus label:before {
   background-image: url("../img/catalog/radio-off-focus.svg");
 }
 
-.filter-grid li:disabled label:before {
+.filter-grid-item:disabled label:before {
   opacity: 0.1;
 }
 
@@ -1363,12 +1412,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-grid li:hover label:after,
-.filter-grid li:focus label:after {
+.filter-grid-item:hover label:after,
+.filter-grid-item:focus label:after {
   background-image: url("../img/catalog/radio-on-focus.svg");
 }
 
-.filter-grid li:disabled label:after {
+.filter-grid-item:disabled label:after {
   opacity: 0.1;
 }
 
@@ -1406,7 +1455,7 @@ input[type="email"] {
   padding-left: 45px;
 }
 
-.filter-special li label {
+.filter-special label {
   position: relative;
 
   display: block;
@@ -1445,12 +1494,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-special li:hover label:before,
-.filter-special li:focus label:before {
+.filter-special-item:hover label:before,
+.filter-special-item:focus label:before {
   background-image: url("../img/catalog/checkbox-off-focus.svg");
 }
 
-.filter-special li:disabled label:before {
+.filter-special-item:disabled label:before {
   opacity: 0.1;
 }
 
@@ -1469,12 +1518,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-special li:hover label:after,
-.filter-special li:focus label:after {
+.filter-special-item:hover label:after,
+.filter-special-item:focus label:after {
   background-image: url("../img/catalog/checkbox-on-focus.svg");
 }
 
-.filter-special li:disabled label:after {
+.filter-special-item:disabled label:after {
   opacity: 0.1;
 }
 
@@ -1636,7 +1685,7 @@ input[type="email"] {
   list-style: none;
 }
 
-.head-btn li {
+.head-btn span {
   margin-right: 9px;
   width: 14px;
   height: 14px;
@@ -1680,11 +1729,11 @@ input[type="email"] {
   margin-right: 0;
 }
 
-.image-content li:first-child .layout-menu {
+.image-content-item:first-child .layout-menu {
   opacity: 1;
 }
 
-.image-content li:first-child .head-wrapper {
+.image-content-item:first-child .head-wrapper {
   background-color: #4d4d4d;
 }
 

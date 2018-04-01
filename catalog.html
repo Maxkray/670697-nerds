@@ -5,20 +5,20 @@
   	<title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
       <h1 class="visually-hidden">Дизайн студия Nërds</h1>
       <nav class="main-navigation">
         <div class="container">
-          <a href="index.html" title="На главную страницу" class="main-header-logo">
+          <a href="index.html" title="На главную страницу" class="main-header-logo logo-catalog">
             <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
           </a>
           <ul class="site-navigation">
             <li><a href="studio.html" title="О студии Nërds">Студия</a></li>
             <li><a href="clients.html" title="О клиентах">Клиенты</a></li>
-            <li class="current"><a href="catalog.html" title="О магазине">Магазин</a></li>
+            <li class="current"><a title="О магазине">Магазин</a></li>
             <li><a href="contacts.html" title="Наши контакты">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
@@ -34,96 +34,104 @@
   		  </div>
       </div>
   		<div class="container">
-      <section class="filters">
-  			<h2 class="visually-hidden">Фильтры по параметрам</h2>
-        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="filter-wrapper">
-          <fieldset class="filter-item fieldset">
-            <legend>Стоимость:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+        <section class="filters">
+  			  <h2 class="visually-hidden">Фильтры по параметрам</h2>
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="filter-wrapper">
+              <fieldset class="filter-item fieldset">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-              </div>
+              </fieldset>
+  			      <fieldset class="filter-grid fieldset">
+                <legend>Сетка:</legend>
+                <ul>
+                  <li class="filter-grid-item">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-1" value="adaptive" checked>
+                    <label for="grid-1">Адаптивная</label>
+                  </li>
+                  <li class="filter-grid-item">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-2" value="fixed">
+                    <label for="grid-2">Фиксированная</label>
+                  </li>
+                  <li class="filter-grid-item">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-3" value="rubber">
+                    <label for="grid-3">Резиновая</label>
+                  </li>
+                </ul>
+  			      </fieldset>
+  			      <fieldset class="filter-special fieldset">
+  				      <legend>Особенности:</legend>
+                <ul>
+                  <li class="filter-special-item">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-slider" id="special-1" checked value="slider">
+                    <label for="special-1">Слайдер</label>
+                    <span class="checkbox-indicator"></span>
+                  </li>
+                  <li class="filter-special-item">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-block" id="special-2" value="features">
+                    <label for="special-2">Блок приемуществ</label>
+                    <span class="checkbox-indicator"></span>
+                  </li>
+                  <li class="filter-special-item">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-news" id="special-3" value="news" checked>
+                    <label for="special-3">Новости</label>
+                    <span class="checkbox-indicator"></span>
+                  </li>
+                  <li class="filter-special-item">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-hall" id="special-4" value="passage">
+                    <label for="special-4">Галерея</label>
+                    <span class="checkbox-indicator"></span>
+                  </li>
+                  <li class="filter-special-item">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-busket" id="special-5" value="busket">
+                    <label for="special-5">Корзина</label>
+                    <span class="checkbox-indicator"></span>
+                  </li>
+                </ul>
+  			      </fieldset>
+              <button class="button-2 btn-text">Показать</button>
             </div>
-          </fieldset>
-  			  <fieldset class="filter-grid fieldset">
-            <legend>Сетка:</legend>
-            <ul>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-1" value="adaptive" checked>
-                <label for="grid-1">Адаптивная</label>
-              </li>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-2" value="fixed">
-                <label for="grid-2">Фиксированная</label>
-              </li>
-              <li><input class="visually-hidden filter-input-radio" type="radio" name="grid-radio" id="grid-3" value="rubber">
-                <label for="grid-3">Резиновая</label>
-              </li>
-            </ul>
-  			  </fieldset>
-  			  <fieldset class="filter-special fieldset">
-  				  <legend>Особенности:</legend>
-              <ul>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-slider" id="special-1" checked value="slider">
-                  <label for="special-1">Слайдер</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-block" id="special-2" value="features">
-                  <label for="special-2">Блок приемуществ</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-news" id="special-3" value="news" checked>
-                  <label for="special-3">Новости</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-hall" id="special-4" value="passage">
-                  <label for="special-4">Галерея</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-                <li><input class="visually-hidden filter-input-checkbox" type="checkbox" name="special-busket" id="special-5" value="busket">
-                  <label for="special-5">Корзина</label>
-                  <span class="checkbox-indicator"></span>
-                </li>
-              </ul>
-  			  </fieldset>
-          <button class="button-2 btn-text">Показать</button>
-          </div>
-        </form>
-      </section>
-  		<div class="main-container">
-        <section class="sort">
-  			  <h2 class="visually-hidden">Типы</h2>
-  			  <div class="sort-wrapper">
-            <h3>Сортировать:</h3>
-  			    <ul class="sort-types">
-  				    <li><a href="#" title="распределить по цене" class="by-price">По цене</a></li>
-  				    <li><a href="#" title="распределить по типу" class="by-type">По типу</a></li>
-  				    <li><a href="#" title="распределить по названию" class="by-name">По названию</a></li>
-  			    </ul>
-            <div class="sort-up-down">
-              <button type="button" class="arrow-down arrow-active">По убыванию</button>
-              <button type="button" class="arrow-up">По возрастанию</button>
-            </div>
-          </div>
+          </form>
         </section>
+        <div class="main-container">
+          <section class="sort">
+  			    <h2 class="visually-hidden">Типы</h2>
+  			    <div class="sort-wrapper">
+              <h3>Сортировать:</h3>
+  			      <ul class="sort-types">
+  				      <li><a href="#" title="распределить по цене" class="by-price">По цене</a></li>
+  				      <li><a href="#" title="распределить по типу" class="by-type">По типу</a></li>
+  				      <li><a href="#" title="распределить по названию" class="by-name">По названию</a></li>
+  			      </ul>
+              <div class="sort-up-down">
+                <button type="button" class="arrow-down arrow-active">По убыванию</button>
+                <button type="button" class="arrow-up">По возрастанию</button>
+              </div>
+            </div>
+          </section>
   		    <section class="price-list-layouts">
   			    <h2 class="visually-hidden">Макеты</h2>
   			    <div class="layouts-wrapper">
               <ul class="image-content">
     				    <li class="image-content-item">
     					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-sedona.jpeg" width="360" height="575" alt="Sedona" >
     					    <div class="layout-menu">
@@ -133,12 +141,12 @@
     					    </div>
     				    </li>
     				    <li class="image-content-item">
-    					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div class="head-wrapper">
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-pink.jpeg" width="360" height="575" alt="Pink app" >
     					    <div class="layout-menu">
@@ -148,12 +156,12 @@
     					    </div>
     				    </li>
     				    <li class="image-content-item">
-    					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div class="head-wrapper">
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-barbershop.jpeg" width="360" height="575" alt="Barbershop" >
     					    <div class="layout-menu">
@@ -163,12 +171,12 @@
     					    </div>
     				    </li>
     				    <li class="image-content-item">
-    					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div class="head-wrapper">
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-mishka.jpeg" width="360" height="575" alt="mishka" >
     					    <div class="layout-menu">
@@ -178,12 +186,12 @@
     					    </div>
     				    </li>
     				    <li class="image-content-item">
-    					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div class="head-wrapper">
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-aplus.jpeg" width="360" height="575" alt="Aplus" >
     					    <div class="layout-menu">
@@ -193,23 +201,23 @@
     					    </div>
     				    </li>
     				    <li class="image-content-item">
-    					    <div class="head-wrapper">
-                    <ul class="head-btn">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div class="head-wrapper">
+                    <div class="head-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <img src="img/catalog/img-kvast.jpeg" width="360" height="575" alt="Kvast" >
     					    <div class="layout-menu">
     						    <a href="#" title="Перейти на макет">Кваст</a>
     						    <p>Промо-сайт производителя<br> крафтового кваса</p>
     						    <button class="button btn-3">9 900 руб.</button>
-    					     </div>
-    				      </li>
-    			      </ul>
-    		      </div>
-            </section>
+    					    </div>
+    				    </li>
+    			    </ul>
+    		    </div>
+          </section>
     		  <section class="content-navigation">
     			  <h2 class="visually-hidden">Страницы</h2>
     			  <nav class="pages">
@@ -217,7 +225,7 @@
     				  <button class="btn-page button-2">2</button>
     				  <button class="btn-page button-2">3</button>
     				  <button class="button-2 btn-text next-btn">Следующая</button>
-    			 </nav>
+    			  </nav>
     		  </section>
   	    </div>
       </div>
@@ -233,14 +241,14 @@
               <b>Nërds design studio</b>
               <p class="contacts-addres">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
               <p class="phone"><a href="tel:+78122757575" title="Позвонить нам">тел. +7(812)275-75-75</a></p>
-              <button class="button write-us-button" type="button">Напишите нам</button>
+              <a href="writeus.html" title="Напишите нам" class="button write-us-button">Напишите нам</a>
             </div>
           </div>
         </div>
       </section>
-        <section class="social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <div class="container">
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <div class="container">
           <div class="icon">
             <ul class="icon-list">
               <li><a href="#" class="social-button" title="VK" aria-label="Вконтакте">
@@ -268,7 +276,7 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
-        </section>
+      </section>
   		<section class="modal modal-write">
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
           <div class="modal-form-row">
@@ -293,6 +301,6 @@
         </form>
       </section>
   	</footer>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
-  </html>
+</html>
