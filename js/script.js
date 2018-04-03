@@ -1,50 +1,53 @@
-  var link = document.querySelector(".write-us-button");
+(function() {
 
-  var popup = document.querySelector(".modal-write");
-  var close = popup.querySelector(".modal-close");
+    var contacts = document.querySelector(".write-us-button");
 
-  var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=name]");
-  var mail = popup.querySelector("[name=mail]");
+    var popup = document.querySelector(".modal-write");
+    var close = document.querySelector(".modal-close");
 
-  var isStorageSupport = true;
-  var storage = "";
+    var form = popup.querySelector("form");
+    var username = popup.querySelector("[name=name]");
+    var useremail = popup.querySelector("[name=mail]");
 
-  try {
-    storage = localStorage.getItem("mail");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+    var storage = "";
 
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    name.focus();
+    contacts.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
 
-    if (storage) {
-      mail.value = storage;
-      password.focus();
-    } else {
-      mail.focus();
-    }
-  });
+        if (storage) {
+            username.value = storage;
+            useremail.focus();
+        } else {
+            username.focus();
+        }
+    });
 
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+    });
 
-  form.addEventListener("submit", function (evt) {
-    if (!name.value || !mail.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("mail", mail.value);
-      }
-    }
-  });
+    form.addEventListener("submit", function (evt) {
+        if (!username.value || !useremail.value) {
+            evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
+            console.log('Ошибка');
+        } else {
+            localStorage.setItem("name", username.value);
+        }
+    });
 
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+            }
+        }
+    });
+
+})()
