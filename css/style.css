@@ -1420,12 +1420,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-grid-item:hover label:before,
-.filter-grid-item:focus label:before {
+.filter-grid-item:hover label::before,
+.filter-grid-item:focus label::before {
   background-image: url("../img/catalog/radio-off-focus.svg");
 }
 
-.filter-grid-item:disabled label:before {
+.filter-grid-item:disabled label::before {
   opacity: 0.1;
 }
 
@@ -1444,12 +1444,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-grid-item:hover label:after,
-.filter-grid-item:focus label:after {
+.filter-grid-item:hover label::after,
+.filter-grid-item:focus label::after {
   background-image: url("../img/catalog/radio-on-focus.svg");
 }
 
-.filter-grid-item:disabled label:after {
+.filter-grid-item:disabled label::after {
   opacity: 0.1;
 }
 
@@ -1525,12 +1525,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-special-item:hover label:before,
-.filter-special-item:focus label:before {
+.filter-special-item:hover label::before,
+.filter-special-item:focus label::before {
   background-image: url("../img/catalog/checkbox-off-focus.svg");
 }
 
-.filter-special-item:disabled label:before {
+.filter-special-item:disabled label::before {
   opacity: 0.1;
 }
 
@@ -1549,12 +1549,12 @@ input[type="email"] {
   background-position: 0 0;
 }
 
-.filter-special-item:hover label:after,
-.filter-special-item:focus label:after {
+.filter-special-item:hover label::after,
+.filter-special-item:focus label::after {
   background-image: url("../img/catalog/checkbox-on-focus.svg");
 }
 
-.filter-special-item:disabled label:after {
+.filter-special-item:disabled label::after {
   opacity: 0.1;
 }
 
@@ -1949,4 +1949,14 @@ body {
 
 .our-contacts img {
   width:  100%;
+}
+
+.filter-input-radio:focus + label::before {
+  outline: 1px dashed #0033ff;
+  outline-offset: 2px;
+}
+
+.filter-input-checkbox:focus + label::before {
+  outline: 1px dashed #0033ff;
+  outline-offset: 2px;
 }
